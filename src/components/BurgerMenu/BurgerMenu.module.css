@@ -1,0 +1,51 @@
+.container {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 360px;
+  height: 100vh;
+
+  background-color: #fff;
+}
+
+.cross {
+  width: 20px;
+  height: 20px;
+
+  margin: 20px 20px 105px auto;
+}
+
+.cross:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+
+  height: 351px;
+
+  margin: 0 0 0 20px;
+}
+
+.link {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 10%;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
