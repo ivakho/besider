@@ -13,7 +13,7 @@ export const fetchNews = createAsyncThunk<
   { year: number; month: number }
 >("news/fetchNews", async ({ year, month }) => {
   const response = await fetch(
-    `https://api.nytimes.com/svc/archive/v1/${year}/${month}.json?api-key=zdRj5AvsGD8Zm8YLQCX8eeLrKeQ7janI`
+    `/api/svc/archive/v1/${year}/${month}.json?api-key=zdRj5AvsGD8Zm8YLQCX8eeLrKeQ7janI`
   );
   const result = await response.json();
   return result.response.docs;
